@@ -4,6 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
+@font-face {
+    font-family: "Dreams_of_Theatre";
+    src: url(../src/fonts/dreamsoftheatre.ttf) format(truetype);
+}
+
 * {
     font-family: Archivo Black, sans-serif;
+}
+
+.dt_font {
+    font-family: "Dreams_of_Theatre", Archivo, sans-serif;
 }
