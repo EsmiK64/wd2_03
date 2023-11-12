@@ -80,6 +80,10 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.darker_container_bg {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .bg {
     background-image: url("../src/img/concert_bg_02.jpg");
     background-size: cover;
