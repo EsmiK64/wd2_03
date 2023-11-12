@@ -2,17 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
 @font-face {
-    font-family: "Dreams_of_Theatre";
-    src: url(../src/fonts/dreamsoftheatre.ttf) format(truetype);
+  font-family: "Dreams_of_Theatre";
+  src: url(../src/fonts/dreamsoftheatre.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Minerva Modern Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minerva Modern Black"),
+    url("../src/fonts/MinervaModern Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minerva Modern Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minerva Modern Black Italic"),
+    url("../src/fonts/MinervaModern BlackItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minerva Modern Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minerva Modern Bold"),
+    url("../src/fonts/MinervaModern Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minerva Modern Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minerva Modern Bold Italic"),
+    url("../src/fonts/MinervaModern BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minerva Modern Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minerva Modern Italic"),
+    url("../src/fonts/MinervaModern Italic.woff") format("woff");
 }
 
 * {
-    font-family: Archivo Black, sans-serif;
+  font-family: Minerva_Modern_Black, sans-serif;
 }
 
 .dt_font {
-    font-family: "Dreams_of_Theatre", Archivo, sans-serif;
+  font-family: "Dreams_of_Theatre", Archivo, sans-serif;
+}
+
+.menu_item {
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1.222);
+}
+
+.menu_item:hover {
+  text-shadow: 0 0 18px rgba(255, 255, 255, 1);
+}
+
+.dt_bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1.222);
+}
+
+.dt_bg:hover {
+  transform: translateY(-20px);
+  transform-origin: 50% 50%;
+}
+
+.container_bg {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg {
+    background-image: url("../src/img/concert_bg_02.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: black;
 }
