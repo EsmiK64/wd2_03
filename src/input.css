@@ -62,7 +62,7 @@
 }
 
 .menu_item:hover {
-  text-shadow: 0 0 18px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 25px rgba(255, 255, 255, 1);
 }
 
 .dt_bg {
@@ -92,15 +92,16 @@
     background-color: black;
 }
 
-.album {
+.cover {
   transition: all 1s;
 }
 
-.album:hover {
+.cover_hover {
   transform: translateX(-4rem);
 }
+
 .vinyl {
-  transition: ease-out all 1s;
+  transition: all 1s;
 }
 
 .vinyl_hover {
