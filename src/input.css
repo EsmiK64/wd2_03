@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
 @font-face {
@@ -49,6 +45,10 @@
     url("../src/fonts/MinervaModern Italic.woff") format("woff");
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   font-family: Minerva_Modern_Black, sans-serif;
 }
@@ -90,4 +90,19 @@
     background-attachment: fixed;
     background-position: bottom;
     background-color: black;
+}
+
+.album {
+  transition: all 1s;
+}
+
+.album:hover {
+  transform: translateX(-4rem);
+}
+.vinyl {
+  transition: ease-out all 1s;
+}
+
+.vinyl_hover {
+  transform: translateX(4rem)rotate(90deg);
 }
