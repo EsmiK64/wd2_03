@@ -1,225 +1,294 @@
 <!doctype html>
 <html class="dark">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+</head>
 
-  <body class="bg">
-    <header class="bg-black z-10 fixed w-screen">
-      <nav class="mx-auto flex max-w-7xl place-items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="hidden lg:flex lg:gap-x-8">
-          <a href="https://facebook.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
-            <i class="fa-brands fa-facebook menu_item"></i>
-          </a>
-          <a href="http://twitter.com/dreamtheaternet" class="text-sm font-semibold leading-6 text-white">
-            <i class="fa-brands fa-twitter menu_item"></i>
-          </a>
-          <a href="https://instagram.com/dreamtheaterofficial" class="text-sm font-semibold leading-6 text-white">
-            <i class="fa-brands fa-instagram menu_item"></i>
-          </a>
-          <a href="https://youtube.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
-            <i class="fa-brands fa-youtube menu_item"></i>
-          </a>
-          <a href="https://open.spotify.com/artist/2aaLAng2L2aWD2FClzwiep" class="text-sm font-semibold leading-6 text-white">
-            <i class="fa-brands fa-spotify menu_item"></i>
-          </a>
-          <a href="https://itunes.apple.com/gb/artist/dream-theater/id730091" class="text-sm font-semibold leading-6 text-white">
-            <i class="fa-brands fa-apple menu_item"></i>
-          </a>
-          <a href="https://discord.gg/zGrZjXbC39" class="text-sm font-semibold leading-6 text-white">
-            <i class="fa-brands fa-discord menu_item"></i>
-          </a>
-        </div>
-        <div class="flex lg:flex place-items-center">
-          <a href="./index.html" class="">
+<body class="bg">
+  <header class="bg-black z-10 fixed w-screen">
+    <nav class="mx-auto flex max-w-7xl place-items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="hidden lg:flex lg:gap-x-8">
+        <a href="https://facebook.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+          <i class="fa-brands fa-facebook menu_item"></i>
+        </a>
+        <a href="http://twitter.com/dreamtheaternet" class="text-sm font-semibold leading-6 text-white">
+          <i class="fa-brands fa-twitter menu_item"></i>
+        </a>
+        <a href="https://instagram.com/dreamtheaterofficial" class="text-sm font-semibold leading-6 text-white">
+          <i class="fa-brands fa-instagram menu_item"></i>
+        </a>
+        <a href="https://youtube.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+          <i class="fa-brands fa-youtube menu_item"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/2aaLAng2L2aWD2FClzwiep"
+          class="text-sm font-semibold leading-6 text-white">
+          <i class="fa-brands fa-spotify menu_item"></i>
+        </a>
+        <a href="https://itunes.apple.com/gb/artist/dream-theater/id730091"
+          class="text-sm font-semibold leading-6 text-white">
+          <i class="fa-brands fa-apple menu_item"></i>
+        </a>
+        <a href="https://discord.gg/zGrZjXbC39" class="text-sm font-semibold leading-6 text-white">
+          <i class="fa-brands fa-discord menu_item"></i>
+        </a>
+      </div>
+      <div class="flex lg:flex place-items-center">
+        <a href="./index.html" class="">
+          <span class="sr-only">Dream Theater</span>
+          <img class="h-10 w-auto" src="./img/dt-_logo.webp" alt="" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          onclick="document.getElementById('menu').classList.remove('hidden')">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="./koncerty.html" class="text-sm font-semibold leading-6 text-white menu_item">Koncerty</a>
+        <a href="./diskografie.html" class="text-sm font-semibold leading-6 text-white menu_item">Diskografie</a>
+        <a href="./kapela.html" class="text-sm font-semibold leading-6 text-white menu_item">Kapela</a>
+        <a href="./galerie.html" class="text-sm font-semibold leading-6 text-white menu_item">Galerie</a>
+      </div>
+    </nav>
+    <div class="lg:hidden hidden" id="menu" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 z-10"></div>
+      <div
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="./index.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Dream Theater</span>
-            <img class="h-10 w-auto" src="./img/dt-_logo.webp" alt=""/>
+            <img class="h-8 w-auto" src="./img/dt_small_logo.png" alt="" />
           </a>
-        </div>
-        <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onclick="document.getElementById('menu').classList.remove('hidden')">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
+            onclick="document.getElementById('menu').classList.add('hidden')">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="./koncerty.html" class="text-sm font-semibold leading-6 text-white menu_item">Koncerty</a>
-          <a href="./diskografie.html" class="text-sm font-semibold leading-6 text-white menu_item">Diskografie</a>
-          <a href="./kapela.html" class="text-sm font-semibold leading-6 text-white menu_item">Kapela</a>
-          <a href="./galerie.html" class="text-sm font-semibold leading-6 text-white menu_item">Galerie</a>
-        </div>
-      </nav>
-      <div class="lg:hidden hidden" id="menu" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 z-10"></div>
-        <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div class="flex items-center justify-between">
-            <a href="./index.html" class="-m-1.5 p-1.5">
-              <span class="sr-only">Dream Theater</span>
-              <img class="h-8 w-auto" src="./img/dt_small_logo.png" alt=""/>
-            </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="document.getElementById('menu').classList.add('hidden')">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <a href="./koncerty.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Koncerty</a>
-                <a href="./diskografie.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Diskografie</a>
-                <a href="./kapela.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kapela</a>
-                <a href="./galerie.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galerie</a>
-              </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="./koncerty.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Koncerty</a>
+              <a href="./diskografie.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Diskografie</a>
+              <a href="./kapela.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kapela</a>
+              <a href="./galerie.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galerie</a>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="inset-0 -z-10 w-full isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-[100vh] flex items-center justify-center">
-      <div class="f-carousel absolute" id="myCarousel">
-        <div class="f-carousel__slide"><img src="./img/concert_bg_01.jpg" class="object-cover w-screen h-screen"></div>
-        <div class="f-carousel__slide"><img src="./img/concert_bg_03.jpg" class="object-cover w-screen h-screen"></div>
-        <div class="f-carousel__slide"><img src="./img/concert_bg_05.jpg" class="object-cover w-screen h-screen"></div>
-        <div class="f-carousel__slide"><img src="./img/concert_bg_06.webp" class="object-cover w-screen h-screen"></div>
+    </div>
+  </header>
+  <div
+    class="inset-0 -z-10 w-full isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-[100vh] flex items-center justify-center">
+    <div class="f-carousel absolute" id="myCarousel">
+      <div class="f-carousel__slide"><img src="./img/concert_bg_01.jpg" class="object-cover w-screen h-screen"></div>
+      <div class="f-carousel__slide"><img src="./img/concert_bg_03.jpg" class="object-cover w-screen h-screen"></div>
+      <div class="f-carousel__slide"><img src="./img/concert_bg_05.jpg" class="object-cover w-screen h-screen"></div>
+      <div class="f-carousel__slide"><img src="./img/concert_bg_06.webp" class="object-cover w-screen h-screen"></div>
+    </div>
+    <div class="absolute mx-auto max-w-7xl px-6 lg:px-8 flex justify-center align-center">
+      <div class="mx-auto max-w-2xl lg:mx-0 p-4 flex items-center flex-col">
+        <h2 class="text-4xl tracking-tight text-white sm:text-6xl dt_font font-bold glow">Dream Theater<h2>
+            <p class="font-bold text-white glow">Progresivní metalová skupina, která od konce 80. let spojuje virtuozitu
+              a složitost.</p>
       </div>
-      <div class="absolute mx-auto max-w-7xl px-6 lg:px-8 flex justify-center align-center">
-        <div class="mx-auto max-w-2xl lg:mx-0 p-4 flex items-center flex-col">
-          <h2 class="text-4xl tracking-tight text-white sm:text-6xl dt_font font-bold glow">Dream Theater<h2>
-              <p class="font-bold text-white glow">Progresivní metalová skupina, která od konce 80. let spojuje virtuozitu a složitost.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container mx-auto max-w-6xl container_bg flex flex-col items-center">
-        <div class="darker_container_bg w-full flex justify-center mb-2">
-          <h2 class="py-3 dt_font text-white text-4xl mt-3 ml-3">Kapela</h2>
-        </div>
-        <div class="flex flex-row flex-wrap justify-center gap-5 pb-3">
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700 h-fit">
-            <img class="rounded-t-lg object-cover h-56" src="img/james_labrie.webp" alt=""/>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">James Labrie</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lead Vocals</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Více info
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg object-cover h-56" src="img/john_petrucci.webp" alt=""/>
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">John Petrucci</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hlavní kytarista, backing vocals</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Více info
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg object-cover h-56" src="img/john_myung.webp" alt=""/>
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">John Myung</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Baskytarista</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Více info
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg object-cover h-56" src="img/jordan_rudess.webp" alt=""/>
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tig h-56ht text-gray-900 dark:text-white">Jordan Rudess</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Klávesy</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Více info
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700 h-fit">
-            <a href="#">
-              <img class="rounded-t-lg object-cover h-56" src="img/mike_portnoy.jpg" alt=""/>
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mike Portnoy</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Bicí, backing vocals</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Více info
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
+    </div>
+  </div>
+  </div>
+  <div class="container mx-auto max-w-6xl container_bg flex flex-col items-center">
+    <div class="darker_container_bg w-full flex justify-center mb-2">
+      <h2 class="py-3 dt_font text-white text-4xl mt-3 ml-3">Kapela</h2>
+    </div>
+    <div class="flex flex-row flex-wrap justify-center gap-5 pb-3">
+      <div
+        class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700 h-fit">
+        <img class="rounded-t-lg object-cover h-56" src="img/james_labrie.webp" alt="" />
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">James Labrie</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lead Vocals</p>
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Více info
+            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewbox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
       </div>
-      <footer class="rounded-lg shadow m-4 darker_container_bg">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
-            <a href="http://simonborovec.euweb.cz" class="hover:underline">Šimon Borovec</a>. Studentský projekt, nevlastním žádné obrázky na tomto webu.
-          </span>
-          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-              <a href="./index.html" class="hover:underline me-4 md:me-6">Domů</a>
-            </li>
-            <li>
-              <a href="./koncerty.html" class="hover:underline me-4 md:me-6">Koncerty</a>
-            </li>
-            <li>
-              <a href="./diskografie.html" class="hover:underline me-4 md:me-6">Diskografie</a>
-            </li>
-            <li>
-              <a href="./kapela.html" class="hover:underline me-4 md:me-6">Merch</a>
-            </li>
-          </ul>
+      <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg object-cover h-56" src="img/john_petrucci.webp" alt="" />
+        </a>
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">John Petrucci</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hlavní kytarista, backing vocals</p>
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Více info
+            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewbox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
-      </footer>
+      </div>
+      <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg object-cover h-56" src="img/john_myung.webp" alt="" />
+        </a>
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">John Myung</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Baskytarista</p>
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Více info
+            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewbox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg object-cover h-56" src="img/jordan_rudess.webp" alt="" />
+        </a>
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tig h-56ht text-gray-900 dark:text-white">Jordan Rudess</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Klávesy</p>
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Více info
+            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewbox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="max-w-xs bg-white border border-gray-200 rounded-lg shadow darker_container_bg dark:border-gray-700 h-fit">
+        <a href="#">
+          <img class="rounded-t-lg object-cover h-56" src="img/mike_portnoy.jpg" alt="" />
+        </a>
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mike Portnoy</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Bicí, backing vocals</p>
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Více info
+            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewbox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="darker_container_bg w-full flex flex-col items-center">
+      <h2 class="py-3 dt_font text-white text-4xl mt-3 ml-3">Kontakt</h2>
+      <form class="w-full md:w-1/2 lg:w-1/3 flex flex-col items-center mb-4 p-10 md:p-0">
+        <div class="relative z-0 w-full mb-6 group">
+          <input type="email" name="floating_email" id="floating_email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" " required />
+          <label for="floating_email"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Emailová
+            adresa</label>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6 w-full">
+          <div class="relative z-0 w-full mb-6 group">
+            <input type="text" name="floating_first_name" id="floating_first_name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" " required />
+            <label for="floating_first_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Jméno</label>
+          </div>
+          <div class="relative z-0 w-full mb-6 group">
+            <input type="text" name="floating_last_name" id="floating_last_name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" " required />
+            <label for="floating_last_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Příjmení</label>
+          </div>
+        </div>
+        <div class="relative z-0 w-full mb-6 group">
+          <textarea id="message" name="message" rows="4"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "></textarea>
+          <label for="message" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Vaše zpráva</label>
+        </div>
+        <button type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Odeslat</button>
+      </form>
 
-      <script src="https://kit.fontawesome.com/bf8c6cf1af.js" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
-      <script>
-        const container = document.getElementById("myCarousel");
-        const options = {
-          infinite: true
-        };
+    </div>
+  </div>
+  <footer class="rounded-lg shadow m-4 darker_container_bg">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
+        <a href="http://simonborovec.euweb.cz" class="hover:underline">Šimon Borovec</a>. Studentský projekt, nevlastním
+        žádné obrázky na tomto webu.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+          <a href="./index.html" class="hover:underline me-4 md:me-6">Domů</a>
+        </li>
+        <li>
+          <a href="./koncerty.html" class="hover:underline me-4 md:me-6">Koncerty</a>
+        </li>
+        <li>
+          <a href="./diskografie.html" class="hover:underline me-4 md:me-6">Diskografie</a>
+        </li>
+        <li>
+          <a href="./kapela.html" class="hover:underline me-4 md:me-6">Merch</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-        new Carousel(container, options);
-      </script>
-    </body>
+  <script src="https://kit.fontawesome.com/bf8c6cf1af.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+  <script>
+    const container = document.getElementById("myCarousel");
+    const options = {
+      infinite: true
+    };
 
-  </html>
+    new Carousel(container, options);
+  </script>
+</body>
+
+</html>
