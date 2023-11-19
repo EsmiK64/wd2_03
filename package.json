@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.27",
+    "flag-icons": "^6.15.0",
     "flowbite": "^2.1.1",
     "lilconfig": "^2.1.0",
     "node": "^21.1.0"

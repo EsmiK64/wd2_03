@@ -1,324 +1,301 @@
 <!DOCTYPE html>
 <html class="dark">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../dist/output.css" rel="stylesheet" />
-</head>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="../dist/output.css" rel="stylesheet"/>
+  </head>
 
-<body class="bg">
-  <header class="bg-black z-30 fixed w-screen">
-    <nav class="mx-auto flex max-w-7xl place-items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="hidden lg:flex lg:gap-x-8">
-        <a href="https://facebook.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-facebook menu_item"></i>
-        </a>
-        <a href="http://twitter.com/dreamtheaternet" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-twitter menu_item"></i>
-        </a>
-        <a href="https://instagram.com/dreamtheaterofficial" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-instagram menu_item"></i>
-        </a>
-        <a href="https://youtube.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-youtube menu_item"></i>
-        </a>
-        <a href="https://open.spotify.com/artist/2aaLAng2L2aWD2FClzwiep"
-          class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-spotify menu_item"></i>
-        </a>
-        <a href="https://itunes.apple.com/gb/artist/dream-theater/id730091"
-          class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-apple menu_item"></i>
-        </a>
-        <a href="https://discord.gg/zGrZjXbC39" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-discord menu_item"></i>
-        </a>
-      </div>
-      <div class="flex lg:flex place-items-center">
-        <a href="./index.html">
-          <span class="sr-only">Dream Theater</span>
-          <img class="h-10 w-auto" src="./img/dt-_logo.webp" alt="" />
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          onclick="document.getElementById('menu').classList.remove('hidden')">
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="./koncerty.html" class="text-sm font-semibold leading-6 text-white menu_item">Koncerty</a>
-        <a href="./diskografie.html" class="text-sm font-semibold leading-6 text-white menu_item">Diskografie</a>
-        <a href="./kapela.html" class="text-sm font-semibold leading-6 text-white menu_item">Kapela</a>
-        <a href="./galerie.html" class="text-sm font-semibold leading-6 text-white menu_item">Galerie</a>
-      </div>
-    </nav>
-    <div class="lg:hidden hidden" id="menu" role="dialog" aria-modal="true">
-      <div class="fixed inset-0 z-10"></div>
-      <div
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="./index.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Dream Theater</span>
-            <img class="h-8 w-auto" src="./img/dt_small_logo.png" alt="" />
+  <body class="bg">
+    <header class="bg-black z-30 fixed w-screen">
+      <nav class="mx-auto flex max-w-7xl place-items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="hidden lg:flex lg:gap-x-8">
+          <a href="https://facebook.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-facebook menu_item"></i>
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
-            onclick="document.getElementById('menu').classList.add('hidden')">
-            <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          <a href="http://twitter.com/dreamtheaternet" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-twitter menu_item"></i>
+          </a>
+          <a href="https://instagram.com/dreamtheaterofficial" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-instagram menu_item"></i>
+          </a>
+          <a href="https://youtube.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-youtube menu_item"></i>
+          </a>
+          <a href="https://open.spotify.com/artist/2aaLAng2L2aWD2FClzwiep" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-spotify menu_item"></i>
+          </a>
+          <a href="https://itunes.apple.com/gb/artist/dream-theater/id730091" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-apple menu_item"></i>
+          </a>
+          <a href="https://discord.gg/zGrZjXbC39" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-discord menu_item"></i>
+          </a>
+        </div>
+        <div class="flex lg:flex place-items-center">
+          <a href="./index.html">
+            <span class="sr-only">Dream Theater</span>
+            <img class="h-10 w-auto" src="./img/dt-_logo.webp" alt=""/>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onclick="document.getElementById('menu').classList.remove('hidden')">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </svg>
           </button>
         </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="./koncerty.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Koncerty</a>
-              <a href="./diskografie.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Diskografie</a>
-              <a href="./kapela.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kapela</a>
-              <a href="./galerie.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galerie</a>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="./koncerty.html" class="text-sm font-semibold leading-6 text-white menu_item">Koncerty</a>
+          <a href="./diskografie.html" class="text-sm font-semibold leading-6 text-white menu_item">Diskografie</a>
+          <a href="./kapela.html" class="text-sm font-semibold leading-6 text-white menu_item">Kapela</a>
+          <a href="./galerie.html" class="text-sm font-semibold leading-6 text-white menu_item">Galerie</a>
+        </div>
+      </nav>
+      <div class="lg:hidden hidden" id="menu" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 z-10"></div>
+        <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="./index.html" class="-m-1.5 p-1.5">
+              <span class="sr-only">Dream Theater</span>
+              <img class="h-8 w-auto" src="./img/dt_small_logo.png" alt=""/>
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="document.getElementById('menu').classList.add('hidden')">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="./koncerty.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Koncerty</a>
+                <a href="./diskografie.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Diskografie</a>
+                <a href="./kapela.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kapela</a>
+                <a href="./galerie.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galerie</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="container mx-auto max-w-6xl container_bg flex flex-col items-center gap-2">
-    <div class="darker_container_bg w-full flex justify-center mt-24">
-      <h2 class="py-3 dt_font text-white text-4xl my-2">DISKOGRAFIE</h2>
-    </div>
-    <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-      <div class="flex flex-row w-4/5">
-        <div class="flex flex-col justify-center w-1/2">
-          <h3 class="text-5xl font-bold dt_font">A View From the Top of the World</h3>
-          <p class="text-xl font-bold pl-2 dt_font">2021</p>
-        </div>
-        <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('1');"
-          onmouseout="vinyl_open('1');">
-          <img src="./img/a_view_from_the_top_of_the_world.jpeg" class="h-56 w-56 object-cover z-20 cover"
-            id="cover1" />
-          <a href="https://open.spotify.com/album/5eukDoHISjksEavVxVKcXn?si=TXc6oC4lQNGanx-i1Lf2-w"
-            class="absolute h-56 w-56 vinyl z-10" id="vinyl1"><img src="./img/vinyl.png" /></a>
-        </div>
+    </header>
+    <div class="container mx-auto max-w-6xl container_bg flex flex-col items-center gap-2">
+      <div class="darker_container_bg w-full flex justify-center mt-24">
+        <h2 class="py-3 dt_font text-white text-4xl my-2">DISKOGRAFIE</h2>
       </div>
-    </div>
-    <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-      <div class="flex flex-row w-4/5">
-        <div class="flex flex-col justify-center w-1/2">
-          <h3 class="text-5xl font-bold dt_font">Distance Over Time</h3>
-          <p class="text-xl font-bold pl-2 dt_font">2019</p>
-        </div>
-        <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('2');"
-          onmouseout="vinyl_open('2');">
-          <img src="./img/distance_over_time.webp" class="h-56 w-56 object-cover z-20 cover" id="cover2" />
-          <a href="https://open.spotify.com/album/1sRDi0MSGOy91fHhcpXIu4?si=wFKDErEgQt6QThliFcrP8w"
-            class="absolute h-56 w-56 vinyl z-10" id="vinyl2"><img src="./img/vinyl.png" /></a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-      <div class="flex flex-row w-4/5">
-        <div class="flex flex-col justify-center w-1/2">
-          <h3 class="text-5xl font-bold dt_font">The Astonishing</h3>
-          <p class="text-xl font-bold pl-2 dt_font">2016</p>
-        </div>
-        <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('3');"
-          onmouseout="vinyl_open('3');">
-          <img src="./img/the_astonishing.webp" class="h-56 w-56 object-cover z-20 cover" id="cover3" />
-          <a href="https://open.spotify.com/album/6SRlWxC7lMPu2qlwOMslrk?si=_yz0VS2dS0qqQLSsKLhFWg"
-            class="absolute h-56 w-56 vinyl z-10" id="vinyl3"><img src="./img/vinyl.png" /></a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-      <div class="flex flex-row w-4/5">
-        <div class="flex flex-col justify-center w-1/2">
-          <h3 class="text-5xl font-bold dt_font">Dream Theater</h3>
-          <p class="text-xl font-bold pl-2 dt_font">2013</p>
-        </div>
-        <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('4');"
-          onmouseout="vinyl_open('4');">
-          <img src="./img/dream_theater.webp" class="h-56 w-56 object-cover z-20 cover" id="cover4" />
-          <a href="https://open.spotify.com/album/2yzeTza4DXX5XpzJYY7CXO?si=XpPlFQcYRfWLso8E3sU83g"
-            class="absolute h-56 w-56 vinyl z-10" id="vinyl4"><img src="./img/vinyl.png" /></a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-      <div class="flex flex-row w-4/5">
-        <div class="flex flex-col justify-center w-1/2">
-          <h3 class="text-5xl font-bold dt_font">A Dramatic Turn of Events</h3>
-          <p class="text-xl font-bold pl-2 dt_font">2011</p>
-        </div>
-        <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('5');"
-          onmouseout="vinyl_open('5');">
-          <img src="./img/a_dramatic_turn_of_events.webp" class="h-56 w-56 object-cover z-20 cover" id="cover5" />
-          <a href="https://open.spotify.com/album/6nTSYgih82tTwdWvmbtPHW?si=Gr5qVobnTu-PhmXN0LhmfQ"
-            class="absolute h-56 w-56 vinyl z-10" id="vinyl5"><img src="./img/vinyl.png" /></a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-      <div class="flex flex-row w-4/5">
-        <div class="flex flex-col justify-center w-1/2">
-          <h3 class="text-5xl font-bold dt_font">Black Clouds and Silver Linings</h3>
-          <p class="text-xl font-bold pl-2 dt_font">2009</p>
-        </div>
-        <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('6');"
-          onmouseout="vinyl_open('6');">
-          <img src="./img/black_clouds_and_silver_linings.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover6" />
-          <a href="https://open.spotify.com/album/7khFXQNBzcfSfgGjPKerdE?si=7rIwz5xUQ32mg_INLabqXQ"
-            class="absolute h-56 w-56 vinyl z-10" id="vinyl6"><img src="./img/vinyl.png" /></a>
-        </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Systematic Chaos</h3>
-            <p class="text-xl font-bold pl-2 dt_font">2007</p>
-          </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('7');"
-            onmouseout="vinyl_open('7');">
-            <img src="./img/systematic_chaos.webp" class="h-56 w-56 object-cover z-20 cover" id="cover7" />
-            <a href="https://open.spotify.com/album/5ORyMl3oua4PPIWXZVN8kz?si=DvP9Y4zOScmOrAJnFn5n9g"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl7"><img src="./img/vinyl.png" /></a>
+      <div class="hidden lg:block">
+        <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+          <div class="flex flex-row w-4/5">
+            <div class="flex flex-col justify-center w-1/2">
+              <h3 class="text-4xl font-bold dt_font">A View From the Top of the World</h3>
+              <p class="text-xl font-bold pl-2 dt_font">2021</p>
+            </div>
+            <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('1');" onmouseout="vinyl_open('1');">
+              <img src="./img/a_view_from_the_top_of_the_world.jpeg" class="h-56 w-56 object-cover z-20 cover" id="cover1"/>
+              <a href="https://open.spotify.com/album/5eukDoHISjksEavVxVKcXn?si=TXc6oC4lQNGanx-i1Lf2-w" class="absolute h-56 w-56 vinyl z-10" id="vinyl1"><img src="./img/vinyl.png"/></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Octavarium</h3>
-            <p class="text-xl font-bold pl-2 dt_font">2005</p>
-          </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('8');"
-            onmouseout="vinyl_open('8');">
-            <img src="./img/octavarium.webp" class="h-56 w-56 object-cover z-20 cover" id="cover8" />
-            <a href="https://open.spotify.com/album/4v6kYkn7mYjlWS9vONmmCP?si=aOHtOKAURhyON1fGJSNB7w"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl8"><img src="./img/vinyl.png" /></a>
+        <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+          <div class="flex flex-row w-4/5">
+            <div class="flex flex-col justify-center w-1/2">
+              <h3 class="text-4xl font-bold dt_font">Distance Over Time</h3>
+              <p class="text-xl font-bold pl-2 dt_font">2019</p>
+            </div>
+            <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('2');" onmouseout="vinyl_open('2');">
+              <img src="./img/distance_over_time.webp" class="h-56 w-56 object-cover z-20 cover" id="cover2"/>
+              <a href="https://open.spotify.com/album/1sRDi0MSGOy91fHhcpXIu4?si=wFKDErEgQt6QThliFcrP8w" class="absolute h-56 w-56 vinyl z-10" id="vinyl2"><img src="./img/vinyl.png"/></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Train of Thought</h3>
-            <p class="text-xl font-bold pl-2 dt_font">2003</p>
-          </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('9');"
-            onmouseout="vinyl_open('9');">
-            <img src="./img/train_of_thought.webp" class="h-56 w-56 object-cover z-20 cover" id="cover9" />
-            <a href="https://open.spotify.com/album/1yAbzShRcY4muLKsX8UWxj?si=lfaN4xenR-qodMkGD7ET8A"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl9"><img src="./img/vinyl.png" /></a>
+        <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+          <div class="flex flex-row w-4/5">
+            <div class="flex flex-col justify-center w-1/2">
+              <h3 class="text-4xl font-bold dt_font">The Astonishing</h3>
+              <p class="text-xl font-bold pl-2 dt_font">2016</p>
+            </div>
+            <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('3');" onmouseout="vinyl_open('3');">
+              <img src="./img/the_astonishing.webp" class="h-56 w-56 object-cover z-20 cover" id="cover3"/>
+              <a href="https://open.spotify.com/album/6SRlWxC7lMPu2qlwOMslrk?si=_yz0VS2dS0qqQLSsKLhFWg" class="absolute h-56 w-56 vinyl z-10" id="vinyl3"><img src="./img/vinyl.png"/></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Six Degrees of Inner Turbulence</h3>
-            <p class="text-xl font-bold pl-2 dt_font">2002</p>
-          </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('10');"
-            onmouseout="vinyl_open('10');">
-            <img src="./img/six_degrees_of_inner_turbulence.webp" class="h-56 w-56 object-cover z-20 cover"
-              id="cover10" />
-            <a href="https://open.spotify.com/album/4INFVEhhhnLiqNR4MVPaX8?si=oMbVju9vSKiLGy0Fm98Wxw"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl10"><img src="./img/vinyl.png" /></a>
+        <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+          <div class="flex flex-row w-4/5">
+            <div class="flex flex-col justify-center w-1/2">
+              <h3 class="text-4xl font-bold dt_font">Dream Theater</h3>
+              <p class="text-xl font-bold pl-2 dt_font">2013</p>
+            </div>
+            <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('4');" onmouseout="vinyl_open('4');">
+              <img src="./img/dream_theater.webp" class="h-56 w-56 object-cover z-20 cover" id="cover4"/>
+              <a href="https://open.spotify.com/album/2yzeTza4DXX5XpzJYY7CXO?si=XpPlFQcYRfWLso8E3sU83g" class="absolute h-56 w-56 vinyl z-10" id="vinyl4"><img src="./img/vinyl.png"/></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Metropolis Pt.2 - Scenes From a Memory</h3>
-            <p class="text-xl font-bold pl-2 dt_font">1999</p>
-          </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('11');"
-            onmouseout="vinyl_open('11');">
-            <img src="./img/metropolis_pt2.webp" class="h-56 w-56 object-cover z-20 cover" id="cover11" />
-            <a href="https://open.spotify.com/album/1QZi8laY96nhaeGSklvN4D?si=hsKKHCGCRvGdMWCEPgK7sQ"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl11"><img src="./img/vinyl.png" /></a>
+        <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+          <div class="flex flex-row w-4/5">
+            <div class="flex flex-col justify-center w-1/2">
+              <h3 class="text-4xl font-bold dt_font">A Dramatic Turn of Events</h3>
+              <p class="text-xl font-bold pl-2 dt_font">2011</p>
+            </div>
+            <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('5');" onmouseout="vinyl_open('5');">
+              <img src="./img/a_dramatic_turn_of_events.webp" class="h-56 w-56 object-cover z-20 cover" id="cover5"/>
+              <a href="https://open.spotify.com/album/6nTSYgih82tTwdWvmbtPHW?si=Gr5qVobnTu-PhmXN0LhmfQ" class="absolute h-56 w-56 vinyl z-10" id="vinyl5"><img src="./img/vinyl.png"/></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Falling Into Infinity</h3>
-            <p class="text-xl font-bold pl-2 dt_font">1997</p>
+        <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+          <div class="flex flex-row w-4/5">
+            <div class="flex flex-col justify-center w-1/2">
+              <h3 class="text-4xl font-bold dt_font">Black Clouds and Silver Linings</h3>
+              <p class="text-xl font-bold pl-2 dt_font">2009</p>
+            </div>
+            <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('6');" onmouseout="vinyl_open('6');">
+              <img src="./img/black_clouds_and_silver_linings.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover6"/>
+              <a href="https://open.spotify.com/album/7khFXQNBzcfSfgGjPKerdE?si=7rIwz5xUQ32mg_INLabqXQ" class="absolute h-56 w-56 vinyl z-10" id="vinyl6"><img src="./img/vinyl.png"/></a>
+            </div>
           </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('12');"
-            onmouseout="vinyl_open('12');">
-            <img src="./img/falling_into_infinity.webp" class="h-56 w-56 object-cover z-20 cover" id="cover12" />
-            <a href="https://open.spotify.com/album/2AcOiEYDeMTAzUdVLJ0DP7?si=eYA9A9YQRqKfGLCkrvnSAg"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl12"><img src="./img/vinyl.png" /></a>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Systematic Chaos</h3>
+                <p class="text-xl font-bold pl-2 dt_font">2007</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('7');" onmouseout="vinyl_open('7');">
+                <img src="./img/systematic_chaos.webp" class="h-56 w-56 object-cover z-20 cover" id="cover7"/>
+                <a href="https://open.spotify.com/album/5ORyMl3oua4PPIWXZVN8kz?si=DvP9Y4zOScmOrAJnFn5n9g" class="absolute h-56 w-56 vinyl z-10" id="vinyl7"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">A Change of Seasons</h3>
-            <p class="text-xl font-bold pl-2 dt_font">1995</p>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Octavarium</h3>
+                <p class="text-xl font-bold pl-2 dt_font">2005</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('8');" onmouseout="vinyl_open('8');">
+                <img src="./img/octavarium.webp" class="h-56 w-56 object-cover z-20 cover" id="cover8"/>
+                <a href="https://open.spotify.com/album/4v6kYkn7mYjlWS9vONmmCP?si=aOHtOKAURhyON1fGJSNB7w" class="absolute h-56 w-56 vinyl z-10" id="vinyl8"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
           </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('13');"
-            onmouseout="vinyl_open('13');">
-            <img src="./img/a_change_of_seasons.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover13" />
-            <a href="https://open.spotify.com/album/1ALR5shWvJ99oItXgRTbKj?si=I-tgy371TP6tar-lhIGM6Q"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl13"><img src="./img/vinyl.png" /></a>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Train of Thought</h3>
+                <p class="text-xl font-bold pl-2 dt_font">2003</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('9');" onmouseout="vinyl_open('9');">
+                <img src="./img/train_of_thought.webp" class="h-56 w-56 object-cover z-20 cover" id="cover9"/>
+                <a href="https://open.spotify.com/album/1yAbzShRcY4muLKsX8UWxj?si=lfaN4xenR-qodMkGD7ET8A" class="absolute h-56 w-56 vinyl z-10" id="vinyl9"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Awake</h3>
-            <p class="text-xl font-bold pl-2 dt_font">1994</p>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Six Degrees of Inner Turbulence</h3>
+                <p class="text-xl font-bold pl-2 dt_font">2002</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('10');" onmouseout="vinyl_open('10');">
+                <img src="./img/six_degrees_of_inner_turbulence.webp" class="h-56 w-56 object-cover z-20 cover" id="cover10"/>
+                <a href="https://open.spotify.com/album/4INFVEhhhnLiqNR4MVPaX8?si=oMbVju9vSKiLGy0Fm98Wxw" class="absolute h-56 w-56 vinyl z-10" id="vinyl10"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
           </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('14');"
-            onmouseout="vinyl_open('14');">
-            <img src="./img/awake.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover14" />
-            <a href="https://open.spotify.com/album/4jP59Kwqvy3n09eUe1Cge7?si=up0_JcpUQpCY0ZGQpxMyPw"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl14"><img src="./img/vinyl.png" /></a>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Metropolis Pt.2 - Scenes From a Memory</h3>
+                <p class="text-xl font-bold pl-2 dt_font">1999</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('11');" onmouseout="vinyl_open('11');">
+                <img src="./img/metropolis_pt2.webp" class="h-56 w-56 object-cover z-20 cover" id="cover11"/>
+                <a href="https://open.spotify.com/album/1QZi8laY96nhaeGSklvN4D?si=hsKKHCGCRvGdMWCEPgK7sQ" class="absolute h-56 w-56 vinyl z-10" id="vinyl11"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Falling Into Infinity</h3>
+                <p class="text-xl font-bold pl-2 dt_font">1997</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('12');" onmouseout="vinyl_open('12');">
+                <img src="./img/falling_into_infinity.webp" class="h-56 w-56 object-cover z-20 cover" id="cover12"/>
+                <a href="https://open.spotify.com/album/2AcOiEYDeMTAzUdVLJ0DP7?si=eYA9A9YQRqKfGLCkrvnSAg" class="absolute h-56 w-56 vinyl z-10" id="vinyl12"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">A Change of Seasons</h3>
+                <p class="text-xl font-bold pl-2 dt_font">1995</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('13');" onmouseout="vinyl_open('13');">
+                <img src="./img/a_change_of_seasons.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover13"/>
+                <a href="https://open.spotify.com/album/1ALR5shWvJ99oItXgRTbKj?si=I-tgy371TP6tar-lhIGM6Q" class="absolute h-56 w-56 vinyl z-10" id="vinyl13"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Awake</h3>
+                <p class="text-xl font-bold pl-2 dt_font">1994</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('14');" onmouseout="vinyl_open('14');">
+                <img src="./img/awake.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover14"/>
+                <a href="https://open.spotify.com/album/4jP59Kwqvy3n09eUe1Cge7?si=up0_JcpUQpCY0ZGQpxMyPw" class="absolute h-56 w-56 vinyl z-10" id="vinyl14"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">Images and Words</h3>
+                <p class="text-xl font-bold pl-2 dt_font">1992</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('15');" onmouseout="vinyl_open('15');">
+                <img src="./img/images_and_words.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover15"/>
+                <a href="https://open.spotify.com/album/2QgGoL5VSQhPHudTObS7zK?si=om8Ir6WiRCi8sPkD6N3oLw" class="absolute h-56 w-56 vinyl z-10" id="vinyl15"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
+            <div class="flex flex-row w-4/5">
+              <div class="flex flex-col justify-center w-1/2">
+                <h3 class="text-4xl font-bold dt_font">When Dream and Day Unite</h3>
+                <p class="text-xl font-bold pl-2 dt_font">1989</p>
+              </div>
+              <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('16');" onmouseout="vinyl_open('16');">
+                <img src="./img/when_dream_and_day_unite.webp" class="h-56 w-56 object-cover z-20 cover" id="cover16"/>
+                <a href="https://open.spotify.com/album/1AznpOdGM8OcHYmqOUBXy3?si=iT25_B_2RryobTfk-qgLaA" class="absolute h-56 w-56 vinyl z-10" id="vinyl16"><img src="./img/vinyl.png"/></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">Images and Words</h3>
-            <p class="text-xl font-bold pl-2 dt_font">1992</p>
+      <div class="flex lg:hidden">
+        <div class="container flex flex-row flex-wrap columns-2 md:columns-3 p-4 gap-5 justify-center">
+          <div class="w-40">
+            <img src="./img/a_view_from_the_top_of_the_world.jpeg" class="rounded-lg w-full">
+            <h3 class="dt_font font-bold text-xl">A View from the Top of the World</h3>
+            <p class="font-bold">2021</p>
           </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('15');"
-            onmouseout="vinyl_open('15');">
-            <img src="./img/images_and_words.jpg" class="h-56 w-56 object-cover z-20 cover" id="cover15" />
-            <a href="https://open.spotify.com/album/2QgGoL5VSQhPHudTObS7zK?si=om8Ir6WiRCi8sPkD6N3oLw"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl15"><img src="./img/vinyl.png" /></a>
+          <div class="w-40">
+            <img src="./img/distance_over_time.webp" class="rounded-lg w-full">
+            <h3 class="dt_font font-bold text-xl">Distance Over Time</h3>
+            <p class="font-bold">2019</p>
           </div>
-        </div>
-      </div>
-      <div class="w-full flex flex-wrap gap-5 p-4 justify-center columns-2">
-        <div class="flex flex-row w-4/5">
-          <div class="flex flex-col justify-center w-1/2">
-            <h3 class="text-5xl font-bold dt_font">When Dream and Day Unite</h3>
-            <p class="text-xl font-bold pl-2 dt_font">1989</p>
-          </div>
-          <div class="vinyl_container flex justify-center items-center w-1/2" onmouseover="vinyl_open('16');"
-            onmouseout="vinyl_open('16');">
-            <img src="./img/when_dream_and_day_unite.webp" class="h-56 w-56 object-cover z-20 cover" id="cover16" />
-            <a href="https://open.spotify.com/album/1AznpOdGM8OcHYmqOUBXy3?si=iT25_B_2RryobTfk-qgLaA"
-              class="absolute h-56 w-56 vinyl z-10" id="vinyl16"><img src="./img/vinyl.png" /></a>
+          <div class="w-40">
+            <img src="./img/the_astonishing.webp" class="rounded-lg w-full">
+            <h3 class="dt_font font-bold text-xl">The Astonishing</h3>
+            <p class="font-bold">2016</p>
           </div>
         </div>
       </div>
@@ -326,9 +303,7 @@
     <footer class="rounded-lg shadow m-4 darker_container_bg">
       <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
-          <a href="http://simonborovec.euweb.cz" class="hover:underline">Šimon Borovec</a>. Studentský projekt,
-          nevlastním
-          žádné obrázky na tomto webu.
+          <a href="http://simonborovec.euweb.cz" class="hover:underline">Šimon Borovec</a>. Studentský projekt, nevlastním žádné obrázky na tomto webu.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
@@ -349,10 +324,16 @@
     <script src="https://kit.fontawesome.com/bf8c6cf1af.js" crossorigin="anonymous"></script>
     <script>
       function vinyl_open(number) {
-        document.getElementById('vinyl' + number).classList.toggle('vinyl_hover');
-        document.getElementById('cover' + number).classList.toggle('cover_hover');
+        document
+          .getElementById('vinyl' + number)
+          .classList
+          .toggle('vinyl_hover');
+        document
+          .getElementById('cover' + number)
+          .classList
+          .toggle('cover_hover');
       }
     </script>
-</body>
+  </body>
 
 </html>

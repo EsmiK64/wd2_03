@@ -1,104 +1,282 @@
 <!DOCTYPE html>
 <html class="dark">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../dist/output.css" rel="stylesheet" />
-</head>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="../dist/output.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.14.0/css/flag-icons.min.css"/>
+    <link rel="import" href="bower_components/flag-icon/flag-icon.html">
+  </head>
 
-<body class="bg">
-  <header class="bg-black z-10 fixed w-screen">
-    <nav class="mx-auto flex max-w-7xl place-items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="hidden lg:flex lg:gap-x-8">
-        <a href="https://facebook.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-facebook menu_item"></i>
-        </a>
-        <a href="http://twitter.com/dreamtheaternet" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-twitter menu_item"></i>
-        </a>
-        <a href="https://instagram.com/dreamtheaterofficial" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-instagram menu_item"></i>
-        </a>
-        <a href="https://youtube.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-youtube menu_item"></i>
-        </a>
-        <a href="https://open.spotify.com/artist/2aaLAng2L2aWD2FClzwiep"
-          class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-spotify menu_item"></i>
-        </a>
-        <a href="https://itunes.apple.com/gb/artist/dream-theater/id730091"
-          class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-apple menu_item"></i>
-        </a>
-        <a href="https://discord.gg/zGrZjXbC39" class="text-sm font-semibold leading-6 text-white">
-          <i class="fa-brands fa-discord menu_item"></i>
-        </a>
-      </div>
-      <div class="flex lg:flex place-items-center">
-        <a href="./index.html" class="">
-          <span class="sr-only">Dream Theater</span>
-          <img class="h-10 w-auto" src="./img/dt-_logo.webp" alt="" />
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          onclick="document.getElementById('menu').classList.remove('hidden')">
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="./koncerty.html" class="text-sm font-semibold leading-6 text-white menu_item">Koncerty</a>
-        <a href="./diskografie.html" class="text-sm font-semibold leading-6 text-white menu_item">Diskografie</a>
-        <a href="./kapela.html" class="text-sm font-semibold leading-6 text-white menu_item">Kapela</a>
-        <a href="./galerie.html" class="text-sm font-semibold leading-6 text-white menu_item">Galerie</a>
-      </div>
-    </nav>
-    <div class="lg:hidden hidden" id="menu" role="dialog" aria-modal="true">
-      <div class="fixed inset-0 z-10"></div>
-      <div
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="./index.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Dream Theater</span>
-            <img class="h-8 w-auto" src="./img/dt_small_logo.png" alt="" />
+  <body class="bg">
+    <header class="bg-black z-10 fixed w-screen">
+      <nav class="mx-auto flex max-w-7xl place-items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="hidden lg:flex lg:gap-x-8">
+          <a href="https://facebook.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-facebook menu_item"></i>
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
-            onclick="document.getElementById('menu').classList.add('hidden')">
-            <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          <a href="http://twitter.com/dreamtheaternet" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-twitter menu_item"></i>
+          </a>
+          <a href="https://instagram.com/dreamtheaterofficial" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-instagram menu_item"></i>
+          </a>
+          <a href="https://youtube.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-youtube menu_item"></i>
+          </a>
+          <a href="https://open.spotify.com/artist/2aaLAng2L2aWD2FClzwiep" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-spotify menu_item"></i>
+          </a>
+          <a href="https://itunes.apple.com/gb/artist/dream-theater/id730091" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-apple menu_item"></i>
+          </a>
+          <a href="https://discord.gg/zGrZjXbC39" class="text-sm font-semibold leading-6 text-white">
+            <i class="fa-brands fa-discord menu_item"></i>
+          </a>
+        </div>
+        <div class="flex lg:flex place-items-center">
+          <a href="./index.html" class="">
+            <span class="sr-only">Dream Theater</span>
+            <img class="h-10 w-auto" src="./img/dt-_logo.webp" alt=""/>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onclick="document.getElementById('menu').classList.remove('hidden')">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </svg>
           </button>
         </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="./koncerty.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Koncerty</a>
-              <a href="./diskografie.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Diskografie</a>
-              <a href="./kapela.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kapela</a>
-              <a href="./galerie.html"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galerie</a>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="./koncerty.html" class="text-sm font-semibold leading-6 text-white menu_item">Koncerty</a>
+          <a href="./diskografie.html" class="text-sm font-semibold leading-6 text-white menu_item">Diskografie</a>
+          <a href="./kapela.html" class="text-sm font-semibold leading-6 text-white menu_item">Kapela</a>
+          <a href="./galerie.html" class="text-sm font-semibold leading-6 text-white menu_item">Galerie</a>
+        </div>
+      </nav>
+      <div class="lg:hidden hidden" id="menu" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 z-10"></div>
+        <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="./index.html" class="-m-1.5 p-1.5">
+              <span class="sr-only">Dream Theater</span>
+              <img class="h-8 w-auto" src="./img/dt_small_logo.png" alt=""/>
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="document.getElementById('menu').classList.add('hidden')">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="./koncerty.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Koncerty</a>
+                <a href="./diskografie.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Diskografie</a>
+                <a href="./kapela.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kapela</a>
+                <a href="./galerie.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galerie</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="container mx-auto max-w-6xl container_bg flex flex-col items-center gap-2" id="concerts">
-    <div class="darker_container_bg w-full flex justify-center mt-24">
-      <h2 class="py-3 dt_font text-white text-4xl my-2">Koncerty</h2>
-    </div>
-    <script>
-      // Your provided HTML block
+    </header>
+    <div class="container mx-auto max-w-6xl container_bg flex flex-col items-center gap-2" id="concerts">
+      <div class="darker_container_bg w-full flex justify-center mt-24">
+        <h2 class="py-3 dt_font text-white text-4xl my-2">Koncerty</h2>
+      </div>
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">16. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/texas.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Cedar Park, TX</h3>
+            <p>H-E-B Center At Cedar Park</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">17. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/texas.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Dallas, TX</h3>
+            <p>Smart Financial Center</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">18. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/texas.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Sugarland, TX</h3>
+            <p>Smart Financial Center</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">21. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/florida.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Clearwater, FL</h3>
+            <p>Ruth Eckerd Hall</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">22. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/florida.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Hollywood, FL</h3>
+            <p>Hard Rock Live Arena</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">23. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/florida.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Orlando, FL</h3>
+            <p>Hard Rock</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">25. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/georgia.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Atlanta, GA</h3>
+            <p>Fox Theater</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">27. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/pennsylvania.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Washington, PA</h3>
+            <p>Wild Things Park</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">28. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/new_york.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">New York, NY</h3>
+            <p>Hulu Theater</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">30. 6. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/connecticut.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Bridgeport, CT</h3>
+            <p>Hartford Healthcare Amphitheater</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <hr class="w-5/6 border-black">
+      <div class="w-5/6 flex flex-row p-2">
+        <div class="w-1/6 flex justify-center items-center">
+          <p class="font-bold">1. 7. 2023</p>
+        </div>
+        <div class="w-4/6 flex justify-center items-center flex-row">
+          <img src="./img/pennsylvania.png" class="w-12 mr-5">
+          <div class="w-1/2">
+            <h3 class="dt_font text-2xl font-bold">Philadelphia, PA</h3>
+            <p>The Met</p>
+          </div>
+        </div>
+        <div class="w-1/6 flex justify-center items-center">
+          <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</button>-->
+          <button type="button" class="text-gray-600 bg-gray-200 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center border me-2 mb-2" disabled="disabled">Vyprodáno</button>
+        </div>
+      </div>
+      <script>
+        // Your provided HTML block
+        /*
       const htmlBlock = `
             <div class="flex flex-row flex-wrap justify-center my-2">
                 <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-fit">
@@ -148,43 +326,39 @@
                 07/25 – Inglewood, CA @ YouTube Theater
                 07/26 – Phoenix, AZ @ Arizona Financial Theater`.split("\n");
 
-      // Create copies based on the number of lines
       lines.forEach((line) => {
-        // For each line, create a new HTML element with the same structure as your provided block
         var newElement = document.createElement("div")
         newElement.innerHTML = htmlBlock;
 
-        // Modify the content if needed (e.g., replace the default text)
-        newElement.querySelector("h5").textContent = line.trim(); // Update the text content
+        newElement.querySelector("h5").textContent = line.trim();
 
-        // Append the newly created element to the document or perform any necessary action
         document.getElementById('concerts').appendChild(newElement);
-      });
-    </script>
-  </div>
-  <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
-        <a href="http://simonborovec.euweb.cz" class="hover:underline">Šimon Borovec</a>. Studentský projekt, nevlastním
-        žádné obrázky na tomto webu.
-      </span>
-      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-          <a href="./index.html" class="hover:underline me-4 md:me-6">Domů</a>
-        </li>
-        <li>
-          <a href="./koncerty.html" class="hover:underline me-4 md:me-6">Koncerty</a>
-        </li>
-        <li>
-          <a href="./diskografie.html" class="hover:underline me-4 md:me-6">Diskografie</a>
-        </li>
-        <li>
-          <a href="./kapela.html" class="hover:underline me-4 md:me-6">Merch</a>
-        </li>
-      </ul>
+      });*/
+      </script>
     </div>
-  </footer>
-  <script src="https://kit.fontawesome.com/bf8c6cf1af.js" crossorigin="anonymous"></script>
-</body>
+    <footer class="rounded-lg shadow m-4 darker_container_bg">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
+          <a href="http://simonborovec.euweb.cz" class="hover:underline">Šimon Borovec</a>. Studentský projekt, nevlastním žádné obrázky na tomto webu.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+            <a href="./index.html" class="hover:underline me-4 md:me-6">Domů</a>
+          </li>
+          <li>
+            <a href="./koncerty.html" class="hover:underline me-4 md:me-6">Koncerty</a>
+          </li>
+          <li>
+            <a href="./diskografie.html" class="hover:underline me-4 md:me-6">Diskografie</a>
+          </li>
+          <li>
+            <a href="./kapela.html" class="hover:underline me-4 md:me-6">Merch</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/bf8c6cf1af.js" crossorigin="anonymous"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  </body>
 
 </html>
