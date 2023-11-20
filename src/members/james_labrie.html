@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/carousel/carousel.autoplay.css" />
+</head>
+
+<body class="bg">
+    <header class="bg-black z-10 fixed w-screen">
+        <nav class="mx-auto flex max-w-7xl place-items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="hidden lg:flex lg:gap-x-8">
+                <a href="https://facebook.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+                    <i class="fa-brands fa-facebook menu_item"></i>
+                </a>
+                <a href="http://twitter.com/dreamtheaternet" class="text-sm font-semibold leading-6 text-white">
+                    <i class="fa-brands fa-twitter menu_item"></i>
+                </a>
+                <a href="https://instagram.com/dreamtheaterofficial" class="text-sm font-semibold leading-6 text-white">
+                    <i class="fa-brands fa-instagram menu_item"></i>
+                </a>
+                <a href="https://youtube.com/dreamtheater" class="text-sm font-semibold leading-6 text-white">
+                    <i class="fa-brands fa-youtube menu_item"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/2aaLAng2L2aWD2FClzwiep"
+                    class="text-sm font-semibold leading-6 text-white">
+                    <i class="fa-brands fa-spotify menu_item"></i>
+                </a>
+                <a href="https://itunes.apple.com/gb/artist/dream-theater/id730091"
+                    class="text-sm font-semibold leading-6 text-white">
+                    <i class="fa-brands fa-apple menu_item"></i>
+                </a>
+                <a href="https://discord.gg/zGrZjXbC39" class="text-sm font-semibold leading-6 text-white">
+                    <i class="fa-brands fa-discord menu_item"></i>
+                </a>
+            </div>
+            <div class="flex lg:flex place-items-center">
+                <a href="../index.html" class="">
+                    <span class="sr-only">Dream Theater</span>
+                    <img class="h-10 w-auto" src="../img/dt-_logo.webp" alt="" />
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                    onclick="document.getElementById('menu').classList.remove('hidden')">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="../koncerty.html" class="text-sm font-semibold leading-6 text-white menu_item">Koncerty</a>
+                <a href="../diskografie.html"
+                    class="text-sm font-semibold leading-6 text-white menu_item">Diskografie</a>
+                <a href="../kapela.html" class="text-sm font-semibold leading-6 text-white menu_item">Kapela</a>
+                <a href="../galerie.html" class="text-sm font-semibold leading-6 text-white menu_item">Galerie</a>
+            </div>
+        </nav>
+        <div class="lg:hidden hidden" id="menu" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-10"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="../index.html" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Dream Theater</span>
+                        <img class="h-8 w-auto" src="../img/dt_small_logo.png" alt="" />
+                    </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                        onclick="document.getElementById('menu').classList.add('hidden')">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="./koncerty.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Koncerty</a>
+                            <a href="./diskografie.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Diskografie</a>
+                            <a href="./kapela.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kapela</a>
+                            <a href="./galerie.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galerie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mx-auto max-w-6xl container_bg flex flex-col items-center">
+        <div class="darker_container_bg w-full flex justify-center mt-24">
+            <h2 class="py-3 dt_font text-white text-4xl mt-3 ml-3">James LaBrie</h2>
+        </div>
+        <div class="w-5/6 p-4 text-white flex flex-col items-center">
+            <img src="../img/james_labrie.webp" class="w-full md:w-1/2 object-cover rounded-2xl my-3">
+            <p class="my-3">
+                V roce 1990 zjistil LaBrie, že Dream Theater hledají nového zpěváka, takže poslal nahrávku a byl rychle
+                přepraven do New Yorku na plné konkurzní vystoupení. Průběh konkurzu byl úspěšný, a byl vybrán před 200
+                dalšími nadějnými zpěváky na pozici plnohodnotného zpěváka ve skupině.
+            </p>
+            <p class="my-3">
+                LaBrie od té doby měl významný vliv na vokální melodie na každém albu Dream Theater, ale do nedávné doby
+                měl malý vliv na instrumentaci hudby Dream Theater - na albu A Dramatic Turn of Events z roku 2011 je
+                LaBrie uveden v hudebních creditech u tří písní. Dosud napsal nebo spolunapsal texty alespoň jedné písně
+                na osmi z dvanácti alb, která Dream Theater vydali s ním ve skupině, přičemž alba Images and Words,
+                Black Clouds & Silver Linings, Dream Theater a The Astonishing žádný z jeho textů neobsahují.
+            </p>
+            <p class="my-3">
+                Když ho Prog-Sphere.com zeptal, která je jeho oblíbená píseň od Dream Theater, kterou hraje naživo,
+                James řekl: "Oblíbená píseň pro mě je Scarred, rád ji hraji naživo. A... no, Octavarium, celá ta věc."
+            </p>
+        </div>
+    </div>
+    <footer class="rounded-lg shadow m-4 darker_container_bg">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
+                <a href="http://simonborovec.euweb.cz" class="hover:underline">Šimon Borovec</a>. Studentský projekt,
+                nevlastním
+                žádné obrázky na tomto webu.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="../index.html" class="hover:underline me-4 md:me-6">Domů</a>
+                </li>
+                <li>
+                    <a href="../koncerty.html" class="hover:underline me-4 md:me-6">Koncerty</a>
+                </li>
+                <li>
+                    <a href="../diskografie.html" class="hover:underline me-4 md:me-6">Diskografie</a>
+                </li>
+                <li>
+                    <a href="../kapela.html" class="hover:underline me-4 md:me-6">Merch</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/bf8c6cf1af.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/carousel/carousel.autoplay.umd.js"></script>
+    <script>
+        const container = document.getElementById("myCarousel");
+        const options = {
+            infinite: true,
+            Autoplay: {
+                timeout: 1000,
+            },
+        };
+
+        new Carousel(container, options, { Autoplay });
+    </script>
+</body>
+
+</html>
